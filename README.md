@@ -1,2 +1,2 @@
-# Viktoria project
-https://nikfiery.github.io/viktoria/
+# Victoria project
+https://nikfiery.github.io/victoria/
