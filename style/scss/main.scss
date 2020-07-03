@@ -18,16 +18,16 @@ main {
 .cards {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 1100px;
+    width: 100%;
     padding: 30px;
 }
 
 .card {
     position: relative;
-    max-width: 300px;
+    width: 300px;
     height: 420px;
     background: #0000;
     margin: 30px 10px;
@@ -42,14 +42,14 @@ main {
         width: 220px;
         height: 260px;
         top: -60px;
-        left: 0px;
+        left: 25px;
+        border-radius: 5%;
         z-index: 1;
         box-shadow: 0 5px 20px;
 
         img {
             width: 220px;
             height: 260px;
-            border-radius: 5%;
         }
     }
 
@@ -65,12 +65,13 @@ main {
 
         h2 {
             font-size: 20px;
-            color: #850000
+            color: #850000;
         }
 
         p {
-            font-size: 12px;
-            color: #850000
+            font-size: 14px;
+            color: #850000;
+            text-align: center;
         }
     }
 }
@@ -84,4 +85,5 @@ main {
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
+    background: #131212;
 }
