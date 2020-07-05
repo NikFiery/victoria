@@ -40,6 +40,7 @@ header {
           align-items: center;
   width: 100%;
   background: #000000;
+  z-index: 228;
 }
 
 .navigation nav {
@@ -272,5 +273,107 @@ header {
   width: 100%;
   min-height: 100vh;
   background: #09070A;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #202020;
+}
+
+.cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: #0000;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 5px 202px;
+          box-shadow: 0 5px 202px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card .card__img {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  top: -60px;
+  left: 25px;
+  border-radius: 5%;
+  z-index: 1;
+  -webkit-box-shadow: 0 5px 20px;
+          box-shadow: 0 5px 20px;
+}
+
+.card .card__img img {
+  width: 220px;
+  height: 260px;
+}
+
+.card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #813333;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card .content h2 {
+  font-size: 20px;
+  color: #850000;
+}
+
+.card .content p {
+  font-size: 14px;
+  color: #850000;
+  text-align: center;
+}
+
+.card:hover {
+  height: 420px;
+}
+
+.cards .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  background: #131212;
 }
 /*# sourceMappingURL=main.css.map */
