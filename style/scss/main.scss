@@ -87,3 +87,23 @@ main {
     transition-delay: 0.3s;
     background: #131212;
 }
+
+.larb {
+    display: flex;
+    width: 100%;
+    .larb__photos {
+
+        display: flex;
+        flex-direction: column;
+
+        .larb__photos--top {
+
+            display: flex;
+        }
+    
+        .larb__photos--top {
+
+            display: flex;
+        }
+    }
+}
