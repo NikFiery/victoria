@@ -243,6 +243,7 @@ header {
   color: #ffffff;
   font-weight: 400;
   font-size: 12px;
+  text-decoration: none;
 }
 
 .circle__contant a:hover {
@@ -272,13 +273,17 @@ header {
 .wrapper {
   width: 100%;
   min-height: 100vh;
-  background: #09070A;
+  background: #09070a;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -375,5 +380,34 @@ main {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
   background: #131212;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.gallery .gallery__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gallery .gallery__photos .gallery__photos--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery .gallery__photos .gallery__photos--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
